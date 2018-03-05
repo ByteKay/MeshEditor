@@ -1,0 +1,254 @@
+theme gamepad
+{
+	texture = res/common/gamepad.pvr
+	
+	imageList joystickImages
+	{
+        image outer
+		{
+			region = 0, 0, 256, 256
+		}
+		
+        image inner
+		{
+			region = 256, 0, 256, 256
+		}
+	}
+
+    skin base
+	{
+		border
+		{
+			left = 1
+			right = 1
+			top = 1
+			bottom = 1
+		}
+	}
+
+	skin buttonAActiveSkin : base
+	{
+		region = 0, 304, 160, 160
+	}
+	
+	skin buttonANormalSkin : base
+	{
+		region = 176, 304, 160, 160
+	}
+
+    skin buttonBActiveSkin : base
+	{
+		region = 383, 304, 160, 160
+	}
+	
+	skin buttonBNormalSkin : base
+	{
+		region = 561, 304, 160, 160
+	}
+
+	skin buttonL1NormalSkin : base
+	{
+		region = 1, 594, 60, 55
+	}
+	skin buttonL1DisableSkin : base
+	{
+		region = 1, 730, 60, 55
+	}
+
+	skin buttonL2NormalSkin : base
+	{
+		region = 64, 594, 60, 55
+	}
+	skin buttonL2DisableSkin : base
+	{
+		region = 64, 730, 60, 55
+	}
+
+	skin buttonL3NormalSkin : base
+	{
+		region = 130, 594, 60, 55
+	}
+	skin buttonL3DisableSkin : base
+	{
+		region = 130, 730, 60, 55
+	}
+
+	skin buttonXNormalSkin : base
+	{
+		region = 193, 594, 60, 55
+	}
+	skin buttonXDisableSkin : base
+	{
+		region = 193, 730, 60, 55
+	}
+
+	skin buttonR1NormalSkin : base
+	{
+		region = 260, 594, 60, 55
+	}
+	skin buttonR1DisableSkin : base
+	{
+		region = 260, 730, 60, 55
+	}
+
+	skin buttonR2NormalSkin : base
+	{
+		region = 322, 594, 60, 55
+	}
+	skin buttonR2DisableSkin : base
+	{
+		region = 322, 730, 60, 55
+	}
+
+	skin buttonR3NormalSkin : base
+	{
+		region = 66, 662, 60, 55
+	}
+	skin buttonR3DisableSkin : base
+	{
+		region = 66, 798, 60, 55
+	}
+
+
+	style joystickStyle
+	{
+		stateNormal
+		{
+			imageList = joystickImages
+		}
+	}
+	
+	style buttonAStyle
+	{
+	    stateNormal
+		{
+			skin = buttonANormalSkin
+		}
+		
+		stateActive
+		{
+			skin = buttonAActiveSkin
+		}
+	}
+
+    style buttonBStyle
+	{
+	    stateNormal
+		{
+			skin = buttonBNormalSkin
+		}
+		
+		stateActive
+		{
+			skin = buttonBActiveSkin
+		}
+	}
+
+    style buttonL1Style
+		{
+	    stateNormal
+			{
+				skin = buttonL1NormalSkin
+			}
+			stateActive
+			{
+				skin = buttonL1NormalSkin
+			}
+			stateDisabled
+			{
+				skin = buttonL1DisableSkin
+			}
+		}
+
+    style buttonL2Style
+		{
+	    stateNormal
+			{
+				skin = buttonL2NormalSkin
+			}
+			stateActive
+			{
+				skin = buttonL2NormalSkin
+			}
+			stateDisabled
+			{
+				skin = buttonL2DisableSkin
+			}
+		}
+
+    style buttonL3Style
+		{
+	    stateNormal
+			{
+				skin = buttonL3NormalSkin
+			}
+			stateActive
+			{
+				skin = buttonL3NormalSkin
+			}
+			stateDisabled
+			{
+				skin = buttonL3DisableSkin
+			}
+		}
+    style buttonXStyle
+		{
+	    stateNormal
+			{
+				skin = buttonXNormalSkin
+			}
+			stateActive
+			{
+				skin = buttonXNormalSkin
+			}
+			stateDisabled
+			{
+				skin = buttonXDisableSkin
+			}
+		}
+    style buttonR1Style
+		{
+	    stateNormal
+			{
+				skin = buttonR1NormalSkin
+			}
+			stateActive
+			{
+				skin = buttonR1NormalSkin
+			}
+			stateDisabled
+			{
+				skin = buttonR1DisableSkin
+			}
+		}
+    style buttonR2Style
+		{
+	    stateNormal
+			{
+				skin = buttonR2NormalSkin
+			}
+			stateActive
+			{
+				skin = buttonR2NormalSkin
+			}
+			stateDisabled
+			{
+				skin = buttonR2DisableSkin
+			}
+		}
+    style buttonR3Style
+		{
+	    stateNorma3
+			{
+				skin = buttonR3NormalSkin
+			}
+			stateActive
+			{
+				skin = buttonR3NormalSkin
+			}
+			stateDisabled
+			{
+				skin = buttonR3DisableSkin
+			}
+		}
+}

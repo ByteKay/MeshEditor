@@ -1,0 +1,115 @@
+form gamepadForm
+{
+    theme = res/common/gamepad.theme
+    autoWidth = true
+    autoHeight = true
+    consumeInputEvents = false
+
+    container left
+    {
+        alignment = ALIGN_BOTTOM_LEFT
+        size = 300, 300
+        consumeInputEvents = false
+
+        joystick
+        {
+            style = joystickStyle
+            size = 256, 256
+            alignment = ALIGN_VCENTER_HCENTER
+            radius = 32
+        }
+    }
+
+    container right
+    {
+        alignment = ALIGN_BOTTOM_RIGHT
+        size = 500, 256
+		consumeInputEvents = false
+
+        container inner
+        {
+            size = 376, 230
+            alignment = ALIGN_VCENTER_HCENTER
+            consumeInputEvents = false
+            
+            container inner_right
+            {
+                size = 230, 230
+                alignment = ALIGN_BOTTOM_RIGHT
+                consumeInputEvents = false
+                button jump
+                {
+                    mapping = BUTTON_A
+                    style = buttonAStyle
+                    size = 128, 128
+                    alignment = ALIGN_BOTTOM_LEFT
+                }
+
+                button kick
+                {
+                    mapping = BUTTON_B
+                    style = buttonBStyle
+                    size = 128, 128
+                    alignment = ALIGN_TOP_RIGHT
+                }
+            }
+			container inner_left
+			{
+				size = 120, 230
+				alignment = ALIGN_BOTTOM_LEFT
+				consumeInputEvents = false
+
+				button spell_01
+				{
+					mapping = BUTTON_L1
+					style = buttonAStyle
+					size = 50, 50
+					position = 0, 0
+				}
+				button spell_02
+				{
+					mapping = BUTTON_L2
+					style = buttonAStyle
+					size = 50, 50
+					position = 0, 60
+				}
+				button spell_03
+				{
+					mapping = BUTTON_L3
+					style = buttonAStyle
+					size = 50, 50
+					position = 0, 120
+				}
+				button spell_04
+				{
+					mapping = BUTTON_X
+					style = buttonAStyle
+					size = 50, 50
+					position = 0, 180
+				}
+
+				button spell_05
+				{
+					mapping = BUTTON_R1
+					style = buttonAStyle
+					size = 50, 50
+					position = 60, 0
+				}
+				button spell_06
+				{
+					mapping = BUTTON_R2
+					style = buttonAStyle
+					size = 50, 50
+					position = 60, 60
+				}
+				button spell_07
+				{
+					mapping = BUTTON_R3
+					style = buttonAStyle
+					size = 50, 50
+					position = 60, 120
+				}
+			}
+		}
+  }
+}
